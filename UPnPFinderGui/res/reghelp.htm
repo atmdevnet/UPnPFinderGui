@@ -1,0 +1,660 @@
+﻿
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!--0710-->
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head id="ctl00_Head1"><link rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/Global/Global-bn1795.1.css" /><link rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/Platform/MasterPages/Library/Library-bn1795.1.css" />
+<script language="javascript" type="text/javascript">var jsDomain='http://i2.msdn.microsoft.com';var jsBuildNumber='-bn1795.1';</script>
+<script language="javascript" type="text/javascript" src="http://i2.msdn.microsoft.com/platform/Controls/SurveyLauncher/resources/broker-bn1795.1.js" ></script>
+<meta name="ROBOTS" content="NOINDEX,NOFOLLOW" /><meta name="MN" content="1082-11:23:22 AM" /><meta name="ms.locale" content="en-us" /><meta name="Search.ShortId" content="aa381091" />
+<!-- Looking for metadata? Use the robot view instead http://currentsite/currenturl(robot).aspx -->
+<meta name="DCS.dcsuri" content="/en-us/library(d=default)/aa381091(l=en-us,v=VS.85).aspx" />
+<link rel="stylesheet" type="text/css" href="http://i3.msdn.microsoft.com/en-us/library/mtps-bn1795.1.css?l=en-us&amp;i=library&amp;ct=AlternateSelector;Banner;ContentFallback;DropDownFilter;ExpandCollapseAll;Eyebrow;Footer;InteractiveToolbar;LocaleManagementFlyout;MemberlistFrameworksFilter;MemberlistMembersFilter;MtpsLoginStatus;PageGate;QuickLinksFlyout;RelatedPages;ResizableArea;SurveyLauncher;Tabs;TagEditor;TemplatedFlyout;Tickler;Toc;UserRecognition;WebMetrix;WebTrends;WikiEditor;WikiItem;WikiSection"></link><link rel="alternate" media="print" href="/en-us/library/aa381091(VS.85,printer).aspx" />
+<title>
+	Configuration Settings  (Windows)
+</title><style type="text/css">
+	.ctl00_bnr_tabs_ScopeMenu_0 { background-color:white;visibility:hidden;display:none;position:absolute;left:0px;top:0px; }
+	.ctl00_bnr_tabs_ScopeMenu_1 { text-decoration:none; }
+	.ctl00_bnr_tabs_ScopeMenu_2 { height:22px;width:16px; }
+	.ctl00_bnr_tabs_ScopeMenu_3 { border-style:none; }
+	.ctl00_bnr_tabs_ScopeMenu_4 {  }
+	.ctl00_bnr_tabs_ScopeMenu_5 {  }
+	.ctl00_bnr_tabs_ScopeMenu_6 { border-style:none; }
+	.ctl00_bnr_tabs_ScopeMenu_7 {  }
+	.ctl00_bnr_tabs_ScopeMenu_8 { border-style:none; }
+	.ctl00_bnr_tabs_ScopeMenu_9 {  }
+
+</style></head>
+<body>
+  <form name="aspnetForm" method="post" action="aa381091(VS.85).aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUBMA9kFgJmD2QWAgIDD2QWCAIDD2QWBgIDD2QWBAIBDw8WBB4LTmF2aWdhdGVVcmwFKGphdmFzY3JpcHQ6TG9hZFBhZ2VHYXRlKCd0aWNrbGVyJywgbnVsbCkeBFRleHQFIkNsaWNrIGhlcmUgdG8gSW5zdGFsbCBTaWx2ZXJsaWdodC5kZAIFDxYCHgdFbmFibGVkZ2QCBw9kFgJmD2QWAmYPZBYCZg8PFgYeCENzc0NsYXNzBR9RdWlja0xpbmtzRmx5b3V0U3RhdGljTGlua19tc2RuHgdUb29sVGlwBRlNaWNyb3NvZnQuY29tIFF1aWNrIExpbmtzHgRfIVNCAgJkZAIJD2QWBAIBDw8WBB8DBQR0YWJzHwUCAmQWBgIFDw8WAh8EBQtTZWFyY2ggTVNETmRkAgYPDxYEHwQFFENsaWNrIGhlcmUgdG8gc2VhcmNoHghJbWFnZVVybAVOaHR0cDovL2kubXNkbi5taWNyb3NvZnQuY29tL3BsYXRmb3JtL0NvbnRyb2xzL1RhYnMvcmVzb3VyY2VzL3NlYXJjaF9idXR0b24uZ2lmZGQCCA88KwANAgAPFgQfAwUKc2NvcGVBcnJvdx8FAgJkDBQrAAIFAzA6MBQrAAIWBB8BBQYmbmJzcDseBVZhbHVlZRQrAAQFCzA6MCwwOjEsMDoyFCsAAhYGHwEFC1NlYXJjaCBNU0ROHwcFAjAwHghTZWxlY3RlZGdkFCsAAhYEHwEFFFNlYXJjaCBNaWNyb3NvZnQuY29tHwcFAzEwNWQUKwACFgQfAQULTGl2ZSBTZWFyY2gfBwUDMTE1ZGQCAw8WAh4FY2xhc3MFGnN1YlRhYnNTZWN0aW9uX2xpYnJhcnlNb2RlZAIFD2QWAgIBD2QWBAIBD2QWCAIBDw8WBB8ABUVodHRwOi8vbXNkbjIubWljcm9zb2Z0LmNvbS9lbi11cy9saWJyYXJ5L2FhMzgxMDkxKFZTLjg1LHByaW50ZXIpLmFzcHgfBAUSUHJpbnQgVGhpcyBDb250ZW50FgIeB29uY2xpY2sFYGphdmFzY3JpcHQ6IFdlYkZvcm1fRG9DYWxsYmFjaygnY3RsMDAkaWIxJywncHJpbnRlckZyaWVuZGx5UGFnZScsR2V0U2VydmVyRGF0YSxudWxsLG51bGwsZmFsc2UpOxYCAgIPFgIfAQUYUHJpbnRlciBGcmllbmRseSBWZXJzaW9uZAIDDw8WAh4HVmlzaWJsZWhkZAIFDw8WBB8ABa0BbWFpbHRvOj9zdWJqZWN0PUNvbmZpZ3VyYXRpb24gU2V0dGluZ3MgIChXaW5kb3dzKSZib2R5PVRoaXMgVVJMIHBvaW50cyB0byBhIHBhZ2Ugb24gTVNETiB0aGF0IG1heSBpbnRlcmVzdCB5b3U6IGh0dHA6Ly9tc2RuMi5taWNyb3NvZnQuY29tL2VuLXVzL2xpYnJhcnkvYWEzODEwOTEoVlMuODUpLmFzcHgfBAURU2VuZCBUaGlzIENvbnRlbnQWAh8KBVlqYXZhc2NyaXB0OiBXZWJGb3JtX0RvQ2FsbGJhY2soJ2N0bDAwJGliMScsJ3NlbmRUaGlzUGFnZScsR2V0U2VydmVyRGF0YSxudWxsLG51bGwsZmFsc2UpOxYCAgIPFgIfAQUEU2VuZGQCBw8PFgYfBAVBQ2xpY2sgaGVyZSB0byBqdW1wIHRvIHRoZSBDb21tdW5pdHkgQ29udGVudCBzZWN0aW9uIG9uIHRoaXMgcGFnZS4fAAWXAWh0dHA6Ly9tc2RuMi5taWNyb3NvZnQuY29tL2VuLXVzL2xpYnJhcnkvQ29tbXVuaXR5LVNpZ251cC5hc3B4P3J1PWh0dHAlM2ElMmYlMmZtc2RuMi5taWNyb3NvZnQuY29tJTJmZW4tdXMlMmZsaWJyYXJ5JTJmYWEzODEwOTEoVlMuODUpLmFzcHglM2Z3YmklM2RuZXcfC2dkFgICAg8WAh8BBQ5BZGQgQ29udGVudC4uLmQCAw9kFgJmD2QWAgIBD2QWAgIBD2QWBGYPZBYCZg8PFgIfBAU4VHVybiBzY3JpcHRpbmcgb24gIHRvIHN1Ym1pdCBhIHJhdGluZyBhbmQgc2VuZCBmZWVkYmFjay5kFgQCAQ8PFgIfAQUfQ2xpY2sgdG8gUmF0ZSBhbmQgR2l2ZSBGZWVkYmFja2RkAgMPFgIfCgVaaWYoJGdldCgnY3RsMDBfaWIxX0ZseW91dF90YkNvbW1lbnRzJykhPW51bGwpICRnZXQoJ2N0bDAwX2liMV9GbHlvdXRfdGJDb21tZW50cycpLmZvY3VzKCk7FgICAQ8PFgIfBAUhQ2xpY2sgYSBzdGFyIGFuZCBwcm92aWRlIGZlZWRiYWNrZBYCZg8WBh4KQ2FsbGJhY2tJRAUYY3RsMDAkaWIxJEZseW91dCRSYXRpbmcxHgNUYWcFH2NvbnRlbnRSYXRpbmdhYTM4MTA5MVZTLjg1ZW4tdXMeCU1heFJhdGluZwIFZAIBD2QWBGYPDxYCHwEFHUdpdmUgZmVlZGJhY2sgb24gdGhpcyBjb250ZW50ZGQCAg8PFgYfAQUEU2VuZB8EBRFTZW5kIFRoaXMgQ29udGVudB4NT25DbGllbnRDbGljawWCAXJldHVybiBJc1BhZ2VSYXRlZCgiY3RsMDBfaWIxX0ZseW91dF9SYXRpbmcxIiwiY3RsMDBfaWIxX0ZseW91dF9sYk9wdFRleHQiLCdQbGVhc2UgcmF0ZSB0aGUgcGFnZSBmaXJzdC4nLCAiY3RsMDAkaWIxJEZseW91dCIsdGhpcylkZAIHD2QWAmYPD2QWAh8JBQ1yZXNpemFibGVBcmVhFgRmDw9kFgIeBXN0eWxlBQx3aWR0aDoxODlweDtkAgIPD2QWAh4Hb25rZXl1cAVFIHJhX2tleVByZXNzKHdpbmRvdy5ldmVudCwgImN0bDAwX3JzMV9yYVNwbGl0dGVyIiwiY3RsMDBfcnMxX3JhTGVmdCIpFgYCCw8PFgIfC2hkZAIPDw8WAh8LaGQWAmYPZBYCAgEPFgIeCWlubmVyaHRtbAU8V2FudCBtb3JlPyBIZXJlIGFyZSBzb21lIGFkZGl0aW9uYWwgcmVzb3VyY2VzIG9uIHRoaXMgdG9waWM6ZAIVD2QWBAIBDxYCHwkFD01UUFNfRm9vdGVyRmFkZRYKAgEPDxYEHwMFEE1UUFNfRm9vdGVyTGlua3MfBQICZGQCAw8PFggfAQU4JmNvcHk7IDIwMDggIE1pY3Jvc29mdCBDb3Jwb3JhdGlvbi4gQWxsIHJpZ2h0cyByZXNlcnZlZC4fBAU0wqkgMjAwOCAgTWljcm9zb2Z0IENvcnBvcmF0aW9uLiBBbGwgcmlnaHRzIHJlc2VydmVkLh8DBRRNVFBTX0Zvb3RlckNvcHlyaWdodB8FAgJkZAIFDw8WCh8ABQ4vY2MzMDAzODkuYXNweB8EBQxUZXJtcyBvZiBVc2UfAQUMVGVybXMgb2YgVXNlHwMFEE1UUFNfRm9vdGVyTGlua3MfBQICZGQCBw8PFgofAAVCaHR0cDovL3d3dy5taWNyb3NvZnQuY29tL2xpYnJhcnkvdG9vbGJhci8zLjAvdHJhZGVtYXJrcy9lbi11cy5tc3B4HwQFClRyYWRlbWFya3MfAQUKVHJhZGVtYXJrcx8DBRBNVFBTX0Zvb3RlckxpbmtzHwUCAmRkAgkPDxYKHwAFKmh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbS9pbmZvL3ByaXZhY3kubXNweB8EBRFQcml2YWN5IFN0YXRlbWVudB8BBRFQcml2YWN5IFN0YXRlbWVudB8DBRBNVFBTX0Zvb3RlckxpbmtzHwUCAmRkAgMPZBYCAgEPDxYKHg1BbHRlcm5hdGVUZXh0BRVNaWNyb3NvZnQgQ29ycG9yYXRpb24fBgVJaHR0cDovL2kubXNkbi5taWNyb3NvZnQuY29tL3BsYXRmb3JtL0NvbnRyb2xzL0Zvb3Rlci9yZXNvdXJjZXMvbXNsb2dvLmdpZh8EBRVNaWNyb3NvZnQgQ29ycG9yYXRpb24fAwUPTVRQU19Gb290ZXJMb2dvHwUCAmRkAgwPZBYCAgIPZBYQAgMPDxYEHwYFZGh0dHA6Ly9pLm1zZG4ubWljcm9zb2Z0LmNvbS9wbGF0Zm9ybS9Db250cm9scy9QYWdlR2F0ZS9yZXNvdXJjZXMvZG93bmxvYWRfc2xfbG9nb190YWdsaW5lX2JvdHRvbS5wbmcfEwVDSW5zdGFsbCBNaWNyb3NvZnQgU2lsdmVybGlnaHQgZm9yIGEgYmV0dGVyIGV4cGVyaWVuY2Ugb24gdGhpcyBzaXRlLmRkAgUPDxYCHwEFV0V4cGVyaWVuY2UgU2lsdmVybGlnaHQgZW5hYmxlZCBxdWlja3N0YXJ0IHR1dG9yaWFscywgdmlkZW8gdHJhaW5pbmcsIHNob3djYXNlcyAmIG1vcmUuIGRkAgcPDxYEHwAFLGh0dHA6Ly9nby5taWNyb3NvZnQuY29tL2Z3bGluay8/TGlua0lEPTkyNzk5HwYFV2h0dHA6Ly9pLm1zZG4ubWljcm9zb2Z0LmNvbS9wbGF0Zm9ybS9Db250cm9scy9QYWdlR2F0ZS9yZXNvdXJjZXMvZG93bmxvYWRfc2xfYnV0dG9uLnBuZxYCHgNhbHQFJkNsaWNrIHRvIEluc3RhbGwgTWljcm9zb2Z0IFNpbHZlcmxpZ2h0ZAIJDw8WAh8BBS5CeSBjbGlja2luZyAiQ2xpY2sgdG8gSW5zdGFsbCIgeW91IGFjY2VwdCB0aGUgZGQCCw8PFgQfAAUsaHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9OTI4MDMfAQUdU2lsdmVybGlnaHQgTGljZW5zZSBBZ3JlZW1lbnRkZAINDw8WAh8BBSouPGJyIC8+U2lsdmVybGlnaHQgdXBkYXRlcyBhdXRvbWF0aWNhbGx5LCBkZAIPDw8WBB8ABSxodHRwOi8vZ28ubWljcm9zb2Z0LmNvbS9md2xpbmsvP0xpbmtJRD05MjgwNR8BBQpsZWFybiBtb3JlZGQCEQ8PFgIfAQUBLmRkGAIFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYBBRtjdGwwMCRibnIkdGFicyRTZWFyY2hCdXR0b24FGGN0bDAwJGJuciR0YWJzJFNjb3BlTWVudQ8PZAUDXDAwZJHAFYiEon8tzyBYdsrkjGRFhm0y" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="/WebResource.axd?d=y48MEe_dRk_v_rnD4dSyAA2&amp;t=633415523808454771" type="text/javascript"></script>
+
+
+<script src="http://i2.msdn.microsoft.com/Platform/cjs/Silverlight-bn1795.1.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var gDomain="m.webtrends.com";
+var gDcsId="dcsmgru7m99k7mqmgrhudo0k8_8c6m";
+var gFpc="WT_FPC";
+/*<![CDATA[*/
+if(document.cookie.indexOf(gFpc+"=")==-1){document.write("<scr"+"ipt type='text/javascript' src='"+"http"+(window.location.protocol.indexOf('https:')==0?'s':'')+"://"+gDomain+"/"+gDcsId+"/wtid.js"+"'><\/scr"+"ipt>");}
+/*]]>*/
+var detectedLocale = 'en-us';
+var wtsp="msdnlib_w32_com";
+var gTrackEvents = 0;
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=xHN0PFiqerxZi9XaX-h5yq3irRZSq8UoJJCns199VDpa0ObM5IiVi8jwAdUGgfVV0&amp;t=633415523808454771" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var errSameContent = "Content has not changed";
+var errEmptySubject = "Title can not be empty";
+var errEmptyContent = "Content cannot be empty";
+//]]>
+</script>
+
+<script src="/ScriptResource.axd?d=bKqWKghDJk86bV9YK0AySczwMvOE1hXtrZ3macJvp90OtQT5UjUMwXCetPKJJ773ZMPoFBnQ-qiDhMVnizt92_Hk6YBTIEV4JmLW026zYls1&amp;t=633415163844696677" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=bKqWKghDJk86bV9YK0AySczwMvOE1hXtrZ3macJvp90OtQT5UjUMwXCetPKJJ773rVNsSdLq5i9G-co27C9VmofwH7RfK7J85IoJjj5JXPU1&amp;t=633415163844696677" type="text/javascript"></script>
+<script src="http://i2.msdn.microsoft.com/Platform/cjs/ssmoz-bn1795.1.js" type="text/javascript"></script>
+<script src="http://i2.msdn.microsoft.com/Platform/cjs/sscorlib-bn1795.1.js" type="text/javascript"></script>
+<script src="http://i2.msdn.microsoft.com/Platform/cjs/InlineEditor-bn1795.1.js" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h-zrU2umFZdIz9zPEbBJYExaVkMgaUP5rtjf8GahDjuFg2&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h-bJBr6711TCRpra0M2wl06nOT73_LpWp-QJ2L-CR-6hw2&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h94gCjrzWlAjRFwYHiWcvuE4DqpnlTemd6n8_dfjwKXXA2&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h8WMz8Wx7EYLfZm62K_F0w13fQw5IsATWwZAOliHEAlFj49V4MnEDkKx3dpbfgPVpE1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h94gCjrzWlAjRFwYHiWcvuEcLAn-wbGYrAFnkvV29vqyM8xltEViv9IcgrrwGzmCwk1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h_-Ok_IuDJVZRFdHPlgOEUYxkuwgk8S24v8k303dFh-8CiRBrdefI_0RR6JaAi96XI1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h9W95V8fFG4efefnxBy2-SRrmlRsH8Sw3mHt_qQXcFXMXEeG7PG4pNsq9xUMIuqgvk1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=WMKb-ME3jH14UevdCNBeh-r2IjbudjGuuQoC5TYgFnlD73yFt1PGqv9BXS0440wj9f7rQdpPkLTGs-YcdO_DS9Z04nc_dhAzQsJ7V8W78pk1&amp;t=633415354594589400" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=WMKb-ME3jH14UevdCNBeh-r2IjbudjGuuQoC5TYgFnmhfN4xXLcRtPz29cJkdenO99He5Xvsc2XLFZKnAboIUAwICxVzRXem_KyA94dfVjGv71SEbNksfrnAAFHN6hJD0&amp;t=633415354594589400" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=WMKb-ME3jH14UevdCNBeh-r2IjbudjGuuQoC5TYgFnlN_CBuz6fgmb3JiH_zTtgWcVLTticPwolGC7Qqa6xeQJTKTlfH50HAtSKQ3NeNrIt55YpefRyzt8YAtUavuWrZ0&amp;t=633415354594589400" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h8qCdUpJMH448mxd-ptluf1LBS11SCks1AFwF4gWBUcxbOhwD0hr-RHiZPeuHz9cA01&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h_MFAINfK0IYZsvMdDB3qyEXHvED7We_XxSzgPbehNWbb_6u2ZRdH9qlcNfuxXoou41&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h_hmhrI5RIicSeZ-uxl734L8qIc57FtoJ8RPk_oP831DsYc99ZlZkt8xh-77yJEpK0dTBC2yMTZ3TjlDCjFAvzk0&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h8odgIDQYEaqKRgwkgCr475SoBUV5xSSU5T2UVtMlaU2OhClpwZP85YkSb3cC0hXNEbsFnOEhOOOZjN4MMTf4OW0&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h-rxJjdaQ2aZ-R1VicahLyFb5kLoH7QX6VOXKH2PvnLp27cEHV6Q4InCH3lNfPQGxo1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/ScriptResource.axd?d=gpCIEZuNAsBlY42ulS0n-3F4IgUrH_bDwGbOn1iU3h8Bao6yXGSFe4ORmffQeCReebrDW3RcSGpCelbpfxX4o6y-5O9so2RkeFxsaTfal5A1&amp;t=633397955762367023" type="text/javascript"></script>
+<script src="/Platform/Controls/TagEditor/TagWebService.asmx/js" type="text/javascript"></script>
+<script src="/Platform/Controls/TagEditor/TagCompletionWebService.asmx/js" type="text/javascript"></script>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', document.getElementById('aspnetForm'));
+Sys.WebForms.PageRequestManager.getInstance()._updateControls(['tctl00$ib1$up1'], [], [], 90);
+//]]>
+</script>
+
+    <div id="rheader">
+      
+
+<div class="mtpsBannerMain">
+  <div class="mtpsBannerLeftSection">
+    <span class="UserRecognitionStaticText">Welcome </span>
+
+  &nbsp;|&nbsp;
+  
+<a id="idPPScarab" href="http://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=10&amp;ct=1207247002&amp;rver=5.0.3265.0&amp;wp=MCLBI&amp;wreply=http:%2F%2Fmsdn2.microsoft.com%2Fen-us%2Flibrary%2Faa381091.aspx&amp;lc=1033&amp;cb=wizid%3Db28a479f-4189-428a-8f89-4ace6507a68c%26returnurl%3Dhttp%253a%252f%252fmsdn2.microsoft.com%252fen-us%252flibrary%252faa381091.aspx%26wp%3DMCLBI%26lcid%3D1033&amp;id=74335"><span class="MTPS_GlobalToolbarLinks_msdn">Sign In</span></a>
+
+  </div>
+  <div>
+    
+
+<span id="ticklerWrapper" style="visibility:hidden;">
+<a id="ctl00_bnr_ctl00_InstallLink" onclick="javascript:Track('ctl00_bnr_ctl00|_InstallLink',this);" class="slLink" href="javascript:LoadPageGate('tickler', null)">Click here to Install Silverlight.</a>
+<span id="ctl00_bnr_ctl00_lblSeparatorLeft">&nbsp;&nbsp;|&nbsp;</span>
+</span>
+
+
+    <div class="LocaleManagementFlyoutStatic" style="position:relative;" id="ctl00$bnr$LocaleManagement$ctl00"><a class="LocaleManagementFlyoutStaticLink" href="javascript:void(0)">United States - English&nbsp;</a><img class="LocaleManagementFlyoutPopArrow" src="http://i.msdn.microsoft.com/platform/Controls/LocaleManagementFlyout/resources/popdownarrow.gif" alt="Dropdown Arrow" style="height:4px;width:7px;border-width:0px;" /><div id="ctl00$bnr$LocaleManagement$ctl00_Popup" class="LocaleManagementFlyoutPopup" style="position: absolute;visibility:hidden;left:-65534px;">
+		<table border="0" style="width:175px;">
+			<tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl05','')">Argentina (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl06','')">Australia (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl07','')">Brasil (Português)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl08','')">Canada (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl09','')">Canada (Français)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl10','')">中国 (简体中文)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl11','')">Colombia (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl12','')">Deutschland (Deutsch)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl13','')">España (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl14','')">France (Français)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl15','')">India (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl16','')">Italia (Italiano)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl17','')">México (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl18','')">Perú (Español)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl19','')">Россия (Pусский)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl20','')">United Kingdom (English)</a></td>
+			</tr><tr>
+				<td><a href="javascript:__doPostBack('ctl00$bnr$LocaleManagement$ctl00$ctl21','')">United States (English)</a></td>
+			</tr><tr>
+				<td class="LocaleManagementFlyoutPopupHr"></td>
+			</tr><tr>
+				<td><a href="/en-us/preferences/lang/">More...</a></td>
+			</tr>
+		</table></div><div id="ctl00$bnr$LocaleManagement$ctl00_Anim" class="TFlyPopupAnimate"></div>
+</div>
+
+
+<span id="ctl00_bnr_lblSeparatorRight">&nbsp;|&nbsp;</span><div class="QuickLinksFlyoutStatic_msdn" style="position:relative;" id="ctl00$bnr$QuickLinks$ctrlFlyout"><a id="ctl00_bnr_QuickLinks_ctrlFlyout_ctrlTitle" title="Microsoft.com Quick Links" class="QuickLinksFlyoutStaticLink_msdn" href="javascript:void(0)"><span>Microsoft.com&nbsp;</span><img class="QuickLinksPopArrow" src="http://i.msdn.microsoft.com/platform/Controls/QuickLinksFlyout/resources/popdownarrow-msdn-right.gif" alt="Dropdown arrow" style="height:4px;width:7px;border-width:0px;" /></a><div id="ctl00$bnr$QuickLinks$ctrlFlyout_Popup" class="QuickLinksFlyoutPopup" style="position: absolute;visibility:hidden;left:-65534px;">
+		<?xml version="1.0" encoding="utf-16"?><table><tr><td valign="top"><h4>Product Families</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447412">Office</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447413">Windows</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447414">Windows Server System</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447415">Windows Mobile</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447416">Developer Tools</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447417">Business Solutions</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447418">Games &amp; Xbox</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447419">MSN</a></div></div></td><td valign="top"><h4>Resources</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447420">Microsoft Update</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447421">Office Update</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447422">Download Center</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447423">Help &amp; Support</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447424">Security</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447425">Volume Licensing</a></div></div><h4>About Microsoft</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447426">Company Information</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447427">Investor Relations</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447428">PressPass for journalists</a></div></div></td><td valign="top"><h4>Popular Places</h4><div class="list"><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447429">MSDN (Developers)</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447430">TechNet (IT Pros)</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447431">Microsoft At Home</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447432">Microsoft At Work</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447433">Business &amp; Industry</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447434">Microsoft partners</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447435">Microsoft hardware</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447436">Product catalog</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447437">Mactopia</a></div><div class="listitem"><a href="http://go.microsoft.com/?linkid=4447438">Microsoft.com site map</a></div></div></td></tr><tr><td colspan="10" class="QuickLinksFlyoutPopupHr" /></tr><tr><td valign="top"><h4>Popular Searches</h4><div class="list"><div class="listitem"><a href="http://search.microsoft.com/results.aspx?mkt=en-US&amp;setlang=en-US&amp;q=templates">Templates</a></div><div class="listitem"><a href="http://search.microsoft.com/results.aspx?q=activesync&amp;l=1&amp;mkt=en-US&amp;FORM=QBME1">ActiveSync</a></div><div class="listitem"><a href="http://search.microsoft.com/results.aspx?q=clip+art&amp;l=1&amp;mkt=en-US&amp;FORM=QBME1">Clip art</a></div></div></td><td valign="top"><h4>Popular Downloads</h4><div class="list"><div class="listitem"><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=435bfce7-da2b-4a6a-afa4-f7f14e605a0d&amp;displaylang=en">Windows Defender Beta 2</a></div><div class="listitem"><a href="http://www.microsoft.com/downloads/results.aspx?pocId=&amp;freetext=directx&amp;DisplayLang=en">DirectX End-User Runtime</a></div><div class="listitem"><a href="http://www.microsoft.com/downloads">More popular downloads</a></div></div></td></tr></table></div><div id="ctl00$bnr$QuickLinks$ctrlFlyout_Anim" class="TFlyPopupAnimate"></div>
+</div>
+
+
+
+ </div>
+</div>
+
+  <!--[if IE 7]>
+  <style type="text/css">
+    .scopeArrow
+    {
+        margin-top: -1px;
+        padding-top: 2px;
+        padding-right: 18px;
+    }
+    
+    .TabStrip_SearchBox
+    {
+       padding: 0px 2px 0 2px;
+       height: 19px;
+    }
+  </style>
+  <![endif]-->
+<div id="ctl00_bnr_tabs_Panel1" class="tabs" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_bnr_tabs_SearchButton')">
+	
+    <table class="tabsContainer" cellpadding="0" cellspacing="0" >
+      <tr>
+        <td class="searchSection">
+            
+              <input name="ctl00$bnr$tabs$returnSubmit" type="text" id="ctl00_bnr_tabs_returnSubmit" style="visibility:hidden;display:none;" />
+            <input name="ctl00$bnr$tabs$SearchTextBox" type="text" value="Search MSDN with Live Search" id="ctl00_bnr_tabs_SearchTextBox" title="Search MSDN" class="TabStrip_SearchBox" onfocus="tabs_onFocusSearch(this);" onblur="tabs_onBlurSearch(this);" /><input type="image" name="ctl00$bnr$tabs$SearchButton" id="ctl00_bnr_tabs_SearchButton" title="Click here to search" class="TabStrip_SearchButton" src="http://i.msdn.microsoft.com/platform/Controls/Tabs/resources/search_button.gif" style="border-width:0px;" />
+		                <a href="#ctl00_bnr_tabs_ScopeMenu_SkipLink"><img alt="Skip Navigation Links" src="/WebResource.axd?d=UTv1moRTqqtBCoHLmMmXYQ2&amp;t=633415523808454771" width="0" height="0" style="border-width:0px;" /></a><table id="ctl00_bnr_tabs_ScopeMenu" class="scopeArrow ctl00_bnr_tabs_ScopeMenu_2" cellpadding="0" cellspacing="0" border="0">
+		<tr onmouseover="Menu_HoverStatic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_bnr_tabs_ScopeMenun0">
+			<td><table cellpadding="0" cellspacing="0" border="0" width="100%">
+				<tr>
+					<td style="white-space:nowrap;width:100%;"><a class="ctl00_bnr_tabs_ScopeMenu_1" href="javascript:__doPostBack('ctl00$bnr$tabs$ScopeMenu','')">&nbsp;&nbsp;</a></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table><div id="ctl00_bnr_tabs_ScopeMenun0Items" class="ctl00_bnr_tabs_ScopeMenu_0 scopeFlyout ctl00_bnr_tabs_ScopeMenu_5">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_bnr_tabs_ScopeMenun1">
+				<td><table class="scopeItem ctl00_bnr_tabs_ScopeMenu_4 scopeSelected ctl00_bnr_tabs_ScopeMenu_7" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_bnr_tabs_ScopeMenu_1 scopeItem ctl00_bnr_tabs_ScopeMenu_3 scopeSelected ctl00_bnr_tabs_ScopeMenu_6" href="javascript:__doPostBack('ctl00$bnr$tabs$ScopeMenu','\\00')" style="border-style:none;font-size:1em;">Search MSDN</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_bnr_tabs_ScopeMenun2">
+				<td><table class="scopeItem ctl00_bnr_tabs_ScopeMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_bnr_tabs_ScopeMenu_1 scopeItem ctl00_bnr_tabs_ScopeMenu_3" href="javascript:__doPostBack('ctl00$bnr$tabs$ScopeMenu','\\105')" style="border-style:none;font-size:1em;">Search Microsoft.com</a></td>
+					</tr>
+				</table></td>
+			</tr><tr onmouseover="Menu_HoverDynamic(this)" onmouseout="Menu_Unhover(this)" onkeyup="Menu_Key(event)" id="ctl00_bnr_tabs_ScopeMenun3">
+				<td><table class="scopeItem ctl00_bnr_tabs_ScopeMenu_4" cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td style="white-space:nowrap;width:100%;"><a class="ctl00_bnr_tabs_ScopeMenu_1 scopeItem ctl00_bnr_tabs_ScopeMenu_3" href="javascript:__doPostBack('ctl00$bnr$tabs$ScopeMenu','\\115')" style="border-style:none;font-size:1em;">Live Search</a></td>
+					</tr>
+				</table></td>
+			</tr>
+		</table><div class="scopeItem ctl00_bnr_tabs_ScopeMenu_4 scopeSelected ctl00_bnr_tabs_ScopeMenu_7 ctl00_bnr_tabs_ScopeMenu_0" id="ctl00_bnr_tabs_ScopeMenun0ItemsUp" onmouseover="PopOut_Up(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/WebResource.axd?d=i_hGPjbfLWp2O6XoiuZNbUomv9vYp-GUYnStmCvhdfE1&amp;t=633415523808454771" alt="Scroll up" />
+		</div><div class="scopeItem ctl00_bnr_tabs_ScopeMenu_4 scopeSelected ctl00_bnr_tabs_ScopeMenu_7 ctl00_bnr_tabs_ScopeMenu_0" id="ctl00_bnr_tabs_ScopeMenun0ItemsDn" onmouseover="PopOut_Down(this)" onmouseout="PopOut_Stop(this)" style="text-align:center;">
+			<img src="/WebResource.axd?d=1odrcHMztlHVfip62CrWotDWgKWMWjRU5ZbCBc-js_c1&amp;t=633415523808454771" alt="Scroll down" />
+		</div>
+	</div><a id="ctl00_bnr_tabs_ScopeMenu_SkipLink"></a>
+        </td>
+        <td class="mainTabsSection">
+          <h1 id="ctl00_bnr_tabs_titleHolder">Microsoft Developer Network</h1>
+            <div id="ctl00_bnr_tabs_manTabsHolder" style="margin:0; padding:0;height:25px;overflow:auto;position:relative;">
+          
+            <a id="ctl00_bnr_tabs_ctl00" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl00',this);" title="Home - MSDN Library" href="http://msdn2.microsoft.com/en-us/ms348103.aspx">Home</a><a id="ctl00_bnr_tabs_ctl01" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl01',this);" title="Library - MSDN Library" class="selectedTab" href="http://msdn2.microsoft.com/en-us/library/default.aspx">Library</a><a id="ctl00_bnr_tabs_ctl02" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl02',this);" title="Learn - MSDN Library" href="http://msdn2.microsoft.com/en-us/bb188199.aspx">Learn</a><a id="ctl00_bnr_tabs_ctl03" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl03',this);" title="Downloads - MSDN Library" href="http://msdn2.microsoft.com/en-us/aa570309.aspx">Downloads</a><a id="ctl00_bnr_tabs_ctl04" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl04',this);" title="Support - MSDN Library" href="http://msdn2.microsoft.com/en-us/aa570318.aspx">Support</a><a id="ctl00_bnr_tabs_ctl05" onclick="javascript:Track('|TabStrip Link|ctl00_bnr_tabs_manTabsHolder|ctl00_bnr_tabs_ctl05',this);" title="Community - MSDN Library" href="http://msdn2.microsoft.com/en-us/aa497440.aspx">Community</a></div>
+        </td>
+      </tr>
+    </table>
+
+</div>
+
+<div id="ctl00_bnr_tabs_tabsSubTabs" class="subTabsSection_libraryMode">
+
+  <div  class="tabsDivider" ></div>
+
+   
+  
+   
+
+</div>
+<div id="CenterBrand_SiteBrand">
+	<a href="/"></a>
+</div>
+
+      
+      
+
+<!--[if IE]>
+       <style>
+          .tbfont{	font-size: 70%;}
+        </style><![endif]-->
+
+<div id="ctl00_ib1_Panel1" class="miniRatings">
+	
+  <div id="ctl00_ib1_miniRatings_left" class="miniRatings_left">
+		
+    <a id="ctl00_ib1_hlPrint" title="Print This Content" onclick="javascript: WebForm_DoCallback('ctl00$ib1','printerFriendlyPage',GetServerData,null,null,false);" href="http://msdn2.microsoft.com/en-us/library/aa381091(VS.85,printer).aspx"><img id="ctl00_ib1_imgPrint" src="http://i.msdn.microsoft.com/platform/Controls/InteractiveToolbar/resources/rtg_print.gif" style="border-width:0px;" />&nbsp;
+      Printer Friendly Version</a>
+    
+    <a id="ctl00_ib1_hlSendCont" title="Send This Content" onclick="javascript: WebForm_DoCallback('ctl00$ib1','sendThisPage',GetServerData,null,null,false);" href="mailto:?subject=Configuration Settings  (Windows)&amp;body=This URL points to a page on MSDN that may interest you: http://msdn2.microsoft.com/en-us/library/aa381091(VS.85).aspx"><img id="ctl00_ib1_imgSendCont" src="http://i.msdn.microsoft.com/platform/Controls/InteractiveToolbar/resources/rtg_email.gif" style="border-width:0px;" />&nbsp;
+      Send</a>
+    <a id="ctl00_ib1_hlComCon" title="Click here to jump to the Community Content section on this page." href="http://msdn2.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn2.microsoft.com%2fen-us%2flibrary%2faa381091(VS.85).aspx%3fwbi%3dnew"><img id="ctl00_ib1_imgComCon" src="http://i.msdn.microsoft.com/platform/Controls/InteractiveToolbar/resources/rtg_comcon.gif" style="border-width:0px;" />&nbsp;
+      Add Content...</a>
+  
+	</div>
+  <div id="ctl00_ib1_up1">
+		
+      <div id="ctl00_ib1_miniRatings_right" class="miniRatings_right">
+			
+        <div class="ratingFlyoutStatic" style="position:relative;" id="ctl00$ib1$Flyout"><div id="ctl00_ib1_Flyout_rtgContainer" title="Turn scripting on  to submit a rating and send feedback." style="display: block; text-align:right;">
+					
+              <table style="float:right">
+                <tr>
+                  <td style="text-align:right;line-height:70%;">
+                    <span id="ctl00_ib1_Flyout_rateTitleLabel" class="tbFont">Click to Rate and Give Feedback</span>
+                  </td>
+                  <td id="ctl00_ib1_Flyout_tdRtg" style="width:85px" onclick="if($get('ctl00_ib1_Flyout_tbComments')!=null) $get('ctl00_ib1_Flyout_tbComments').focus();">
+                  
+                      <div id="ctl00_ib1_Flyout_Rating1" title="Click a star and provide feedback" dir="ltr">
+						<input type="hidden" name="ctl00$ib1$Flyout$Rating1_RatingExtender_ClientState" id="ctl00_ib1_Flyout_Rating1_RatingExtender_ClientState" value="0" /><a href="#" id="ctl00_ib1_Flyout_Rating1_A" title="Click a star and provide feedback" style="text-decoration:none"><span id="ctl00_ib1_Flyout_Rating1_Star_1" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_2" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_3" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_4" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span><span id="ctl00_ib1_Flyout_Rating1_Star_5" class="ratingStar emptyRatingStar" style="float:left;">&nbsp;</span></a>
+					</div>
+                      
+                  </td>
+					
+                </tr>
+              </table>
+            
+				</div>
+            <div style="display: block; float: none; clear: both;">
+            </div>
+          <div id="ctl00$ib1$Flyout_Popup" class="ratingFlyoutPopup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<span id="ctl00_ib1_Flyout_lbOptText" class="OptionalText">Give feedback on this content</span><textarea name="ctl00$ib1$Flyout$tbComments" rows="2" cols="20" id="ctl00_ib1_Flyout_tbComments" class="Comment"></textarea><input type="submit" name="ctl00$ib1$Flyout$btnSubmit" value="Send" onclick="return IsPageRated(&quot;ctl00_ib1_Flyout_Rating1&quot;,&quot;ctl00_ib1_Flyout_lbOptText&quot;,'Please rate the page first.', &quot;ctl00$ib1$Flyout&quot;,this);" id="ctl00_ib1_Flyout_btnSubmit" title="Send This Content" class="Button" /></div><div id="ctl00$ib1$Flyout_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			
+      
+		</div>
+    
+	</div>
+  <div style="display: block; clear: both; visibility: hidden;"></div>
+
+</div>
+
+      
+    </div>
+    <div id="contents">
+      <div id="ctl00_rs1_ra1" class="resizableArea">
+	<div id="ctl00_rs1_raLeft" class="leftSection" style="width:189px;">
+		
+          <img id="ctl00_rs1_TocVector1_o" class="hidden" src="http://i.msdn.microsoft.com/platform/Controls/Toc/resources/o.gif" style="border-width:0px;" />
+<img id="ctl00_rs1_TocVector1_c" class="hidden" src="http://i.msdn.microsoft.com/platform/Controls/Toc/resources/c.gif" style="border-width:0px;" />
+<img id="ctl00_rs1_TocVector1_s" class="hidden" src="http://i.msdn.microsoft.com/platform/Controls/Toc/resources/s.gif" style="border-width:0px;" />
+<img id="ctl00_rs1_TocVector1_e" class="hidden" src="http://i.msdn.microsoft.com/platform/Controls/Toc/resources/e.gif" style="border-width:0px;" />
+<div id="holder" onclick="TocClick(event)">
+<div id="ctl00_rs1_TocVector1_root">
+			<ul class="toc" id="tocVectorTreeId"><li name="ms310241(n)"><img src="http://i.msdn.microsoft.com/platform/Controls/Toc/resources/c.gif"/><a href="http://msdn2.microsoft.com/en-us/library/ms123401.aspx" target="_top">MSDN Library</a></li></ul>
+		</div>
+</div>
+
+
+        
+	</div><div class="splitter" title="Click and drag to resize. Double click or press 't' to toggle visibility." style="left:189px;" id="ctl00_rs1_raSplitter" onmousedown="ra_resizeStart(event,this,'ctl00_rs1_raLeft')" onmouseup="ra_resizeStop()" onmouseover="HighlightSplitterBar(this.id,0);" onmouseout="HighlightSplitterBar(this.id,1);" ondblclick="ra_OpenCollapse('ctl00_rs1_raSplitter','ctl00_rs1_raLeft')"></div><div id="ctl00_rs1_raRight" class="rightSection" onkeyup=" ra_keyPress(window.event, &quot;ctl00_rs1_raSplitter&quot;,&quot;ctl00_rs1_raLeft&quot;)">
+		
+        
+          <div >
+          <div id="ctl00_rs1_eb1_Panel1" class="EyebrowMenuBar">
+			
+<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl00"><a title="MSDN" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN</a><div id="ctl00$rs1$eb1$ctl00_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="MSDN Home" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN Home</a><a title="MSDN Library" href="http://msdn2.microsoft.com/en-us/library/default.aspx">MSDN Library</a><a title="MSDN Learn" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN Learn</a><a title="MSDN Downloads" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN Downloads</a><a title="MSDN Support" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN Support</a><a title="MSDN Community" href="http://msdn2.microsoft.com/en-us/default.aspx">MSDN Community</a></div><div id="ctl00$rs1$eb1$ctl00_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl01"><a title="MSDN Library" href="http://msdn2.microsoft.com/en-us/library/ms123401.aspx">MSDN Library</a><div id="ctl00$rs1$eb1$ctl01_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="Development Tools and Languages" href="http://msdn2.microsoft.com/en-us/library/aa187916.aspx">Development Tools and Languages</a><a title="Mobile and Embedded Development" href="http://msdn2.microsoft.com/en-us/library/ms376734.aspx">Mobile and Embedded Development</a><a title=".NET Development" href="http://msdn2.microsoft.com/en-us/library/aa139615.aspx">.NET Development</a><a title="Office Development" href="http://msdn2.microsoft.com/en-us/library/bb726434(office.12).aspx">Office Development</a><a title="Open Protocol Specifications" href="http://msdn2.microsoft.com/en-us/library/cc203350.aspx">Open Protocol Specifications</a><a title="Servers and Enterprise Development" href="http://msdn2.microsoft.com/en-us/library/aa155072.aspx">Servers and Enterprise Development</a><a title="Web Development" href="http://msdn2.microsoft.com/en-us/library/aa155073.aspx">Web Development</a><a title="Win32 and COM Development" href="http://msdn2.microsoft.com/en-us/library/aa139672.aspx">Win32 and COM Development</a><a title="MSDN Library Archive" href="http://msdn.microsoft.com/archive/default.asp">MSDN Library Archive</a></div><div id="ctl00$rs1$eb1$ctl01_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl02"><a title="Win32 and COM Development" href="http://msdn2.microsoft.com/en-us/library/aa139672.aspx">Win32 and COM Development</a><div id="ctl00$rs1$eb1$ctl02_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="Administration and Management" href="http://msdn2.microsoft.com/en-us/library/bb905315.aspx">Administration and Management</a><a title="Component Development" href="http://msdn2.microsoft.com/en-us/library/aa139693.aspx">Component Development</a><a title="Data Access and Storage" href="http://msdn2.microsoft.com/en-us/library/aa139704.aspx">Data Access and Storage</a><a title="Development Guides" href="http://msdn2.microsoft.com/en-us/library/aa139722.aspx">Development Guides</a><a title="Diagnostics" href="http://msdn2.microsoft.com/en-us/library/aa139733.aspx">Diagnostics</a><a title="Graphics and Multimedia" href="http://msdn2.microsoft.com/en-us/library/aa139759.aspx">Graphics and Multimedia</a><a title="Messaging and Collaboration" href="http://msdn2.microsoft.com/en-us/library/aa139781.aspx">Messaging and Collaboration</a><a title="Mobile PC" href="http://msdn2.microsoft.com/en-us/library/aa139795.aspx">Mobile PC</a><a title="Networking" href="http://msdn2.microsoft.com/en-us/library/bb960840.aspx">Networking</a><a title="Security" href="http://msdn2.microsoft.com/en-us/library/aa139845.aspx">Security</a><a title="System Services" href="http://msdn2.microsoft.com/en-us/library/aa163249.aspx">System Services</a><a title="Tools" href="http://msdn2.microsoft.com/en-us/library/aa163280.aspx">Tools</a><a title="User Interface" href="http://msdn2.microsoft.com/en-us/library/aa163284.aspx">User Interface</a><a title="Windows Search" href="http://msdn2.microsoft.com/en-us/library/aa163301.aspx">Windows Search</a><a title="Windows Driver Kit" href="http://msdn2.microsoft.com/en-us/library/aa972908.aspx">Windows Driver Kit</a><a title="Windows Logo Kit" href="http://msdn2.microsoft.com/en-us/library/aa894341.aspx">Windows Logo Kit</a><a title="Windows Versions" href="http://msdn2.microsoft.com/en-us/library/aa894348.aspx">Windows Versions</a><a title="XML" href="http://msdn2.microsoft.com/en-us/library/aa286548.aspx">XML</a><a title="Technical Articles" href="http://msdn2.microsoft.com/en-us/library/bb892724.aspx">Technical Articles</a></div><div id="ctl00$rs1$eb1$ctl02_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl03"><a title="System Services" href="http://msdn2.microsoft.com/en-us/library/aa163249.aspx">System Services</a><div id="ctl00$rs1$eb1$ctl03_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="DLLs, Processes, and Threads" href="http://msdn2.microsoft.com/en-us/library/ms682584(VS.85).aspx">DLLs, Processes, and Threads</a><a title="Device Services" href="http://msdn2.microsoft.com/en-us/library/aa163253.aspx">Device Services</a><a title="Enterprise Services" href="http://msdn2.microsoft.com/en-us/library/aa163256.aspx">Enterprise Services</a><a title="File Services" href="http://msdn2.microsoft.com/en-us/library/aa163259.aspx">File Services</a><a title="Indexing Service" href="http://msdn2.microsoft.com/en-us/library/aa163263.aspx">Indexing Service</a><a title="Interprocess Communications" href="http://msdn2.microsoft.com/en-us/library/aa365574(VS.85).aspx">Interprocess Communications</a><a title="Kernel Transaction Manager" href="http://msdn2.microsoft.com/en-us/library/bb986748(VS.85).aspx">Kernel Transaction Manager</a><a title="Memory Management" href="http://msdn2.microsoft.com/en-us/library/aa366779(VS.85).aspx">Memory Management</a><a title="Power Management" href="http://msdn2.microsoft.com/en-us/library/bb968807(VS.85).aspx">Power Management</a><a title="Windows System Assessment Tool" href="http://msdn2.microsoft.com/en-us/library/ms737378(VS.85).aspx">Windows System Assessment Tool</a><a title="Windows System Information" href="http://msdn2.microsoft.com/en-us/library/ms725495(VS.85).aspx">Windows System Information</a></div><div id="ctl00$rs1$eb1$ctl03_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl04"><a title="Device Services" href="http://msdn2.microsoft.com/en-us/library/aa163253.aspx">Device Services</a><div id="ctl00$rs1$eb1$ctl04_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="Communications Resources" href="http://msdn2.microsoft.com/en-us/library/aa363196(VS.85).aspx">Communications Resources</a><a title="Device Management" href="http://msdn2.microsoft.com/en-us/library/aa363224(VS.85).aspx">Device Management</a><a title="Function Discovery" href="http://msdn2.microsoft.com/en-us/library/aa814070(VS.85).aspx">Function Discovery</a><a title="PnP-X" href="http://msdn2.microsoft.com/en-us/library/aa814083(VS.85).aspx">PnP-X</a><a title="Image Mastering API" href="http://msdn2.microsoft.com/en-us/library/aa366450(VS.85).aspx">Image Mastering API</a><a title="iSCSI" href="http://msdn2.microsoft.com/en-us/library/bb870825(VS.85).aspx">iSCSI</a><a title="UPnP APIs" href="http://msdn2.microsoft.com/en-us/library/aa382303(VS.85).aspx">UPnP APIs</a><a title="Web Services on Devices" href="http://msdn2.microsoft.com/en-us/library/aa826001(VS.85).aspx">Web Services on Devices</a></div><div id="ctl00$rs1$eb1$ctl04_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="stat" style="position:relative;" id="ctl00$rs1$eb1$ctl05"><a title="UPnP APIs" href="http://msdn2.microsoft.com/en-us/library/aa382303(VS.85).aspx">UPnP APIs</a><div id="ctl00$rs1$eb1$ctl05_Popup" class="popup" style="position: absolute;visibility:hidden;left:-65534px;">
+					<a title="What's New in the UPnP APIs" href="http://msdn2.microsoft.com/en-us/library/aa382338(VS.85).aspx">What's New in the UPnP APIs</a><a title="Overview of UPnP Architecture" href="http://msdn2.microsoft.com/en-us/library/aa382261(VS.85).aspx">Overview of UPnP Architecture</a><a title="Configuration Settings" href="http://msdn2.microsoft.com/en-us/library/aa381091(VS.85).aspx">Configuration Settings</a><a title="UPnP Forum and Device Architecture Information" href="http://msdn2.microsoft.com/en-us/library/aa382315(VS.85).aspx">UPnP Forum and Device Architecture ...</a><a title="Control Point API" href="http://msdn2.microsoft.com/en-us/library/aa381109(VS.85).aspx">Control Point API</a><a title="Device Host API" href="http://msdn2.microsoft.com/en-us/library/aa381164(VS.85).aspx">Device Host API</a><a title="Glossary" href="http://msdn2.microsoft.com/en-us/library/aa381210(VS.85).aspx">Glossary</a></div><div id="ctl00$rs1$eb1$ctl05_Anim" class="TFlyPopupAnimate"></div>
+			</div>
+			<div class="nochildstat"><strong>&nbsp;Configuration Settings</strong></div><span style="float:none;clear:both;display:block;"></span>
+		</div>
+
+          </div>
+          <div class="RightPanel">
+          <div class="ContentBar" style="padding-bottom:20px;padding-left:7px;padding-top:7px;">
+            
+            
+<style type="text/css">
+.vb, .cs, .cpp, .nu
+{
+	display:none;
+}
+</style>
+<style id="LanguageSpecificTextStyle" type="text/css">
+.nu
+{
+   display:inline;
+}
+</style>
+            
+            
+         </div>
+          <div class="ContentArea">
+          
+          <span id="ctl00_rs1_altSelector"></span>
+          
+          <div class="topic"  ><div class="majorTitle" xmlns:msxsl="urn:schemas-microsoft-com:xslt"><!----></div><div class="title" xmlns:msxsl="urn:schemas-microsoft-com:xslt">Configuration Settings</div><!--Content type: HTML. Transform: psdk2mtps.xslt.--> <div class="clsServerSDKContent">  <p>The behavior of the <a id="ctl00_rs1_mainContentContainer_ctl01" onclick="javascript:Track('ctl00_rs1_mainContentContainer_ctl00|ctl00_rs1_mainContentContainer_ctl01',this);" href="http://msdn2.microsoft.com/en-us/library/aa381109(VS.85).aspx">Control Point API</a> and <a id="ctl00_rs1_mainContentContainer_ctl02" onclick="javascript:Track('ctl00_rs1_mainContentContainer_ctl00|ctl00_rs1_mainContentContainer_ctl02',this);" href="http://msdn2.microsoft.com/en-us/library/aa381164(VS.85).aspx">Device Host API</a> can be modified by changing settings in the registry.</p> <p> There are seven registry values that affect behavior:</p><p /> <ul> <li><b>DownloadScope</b></li> <li><b>DeviceLifeTime</b></li> <li>\<b>UPnP Device Host</b>\<b>File Size Limit</b></li> <li>\<b>Windows</b>\<b>CurrentVersion</b>\<b>UPnP</b>\<b>File Size Limit</b></li> <li><b>MaxCache</b></li> <li><b>TTL</b></li> <li><b>ReceiveScope</b></li> </ul> <p>There are two registry values called <b>File Size Limit</b>, one for description documents and the other for responses that use  Simple Object Access Protocol (SOAP).</p> <p>The location of each of the seven values in the registry is as follows:</p> <p> </p><p><b>HKEY_LOCAL_MACHINE</b><br />     <b>SOFTWARE</b><br />          <b>Microsoft</b><br />               <b>UPnPControl Point</b><br />                    <b>DownloadScope</b><br />               <b>UPnP Device Host</b><br />                    <b>Devices</b><br />                         <b>DeviceLifeTime</b><br />                    <b>File Size Limit</b><br />               <b>Windows</b><br />                    <b>CurrentVersion</b><br />                         <b>UPnP</b><br />                              <b>File Size Limit</b><br />     <b>SYSTEM</b><br />          <b>CurentControlSet</b><br />               <b>Services</b><br />                    <b>SSDPSRV</b><br />                         <b>Parameters</b><br />                              <b>MaxCache</b><br />                              <b>TTL</b><br />                              <b>ReceiveScope</b></p> <h4><a name="registry_value_descriptions"><!----></a>Registry Value Descriptions</h4> <p>The registry values are explained in the following list. Each registry value is a <b>REG_DWORD</b> (a 32-bit integer). The effect of each value is global.</p> <p /> <dl> <dt><b>DownloadScope</b></dt> <dd><p>Specifies which IP addresses are valid for the device description document URL. If the IP address of the host that is specified in the description document URL is not within the scope specified by <b>DownloadScope</b>, that IP address is not valid and the device object will not be created.</p> <p>The valid values are shown in the following table. The default value is 1.</p> <table class="clsStd"> <tr> <th>Value of <b>DownloadScope</b></th> <th>Meaning</th> </tr> <tr> <td>0</td> <td>Host's IP address must be a subnet address.</td> </tr> <tr> <td>1</td> <td>Host's IP address must be a subnet address or a private address which is one of 10.<i>x</i>.<i>x</i>.<i>x</i>, 192.168.<i>x</i>.<i>x</i>, 172.16.<i>x</i>.<i>x</i> (as specified by RFC 1918), or 169.254.<i>x</i>.<i>x</i> (as specified by RFC 3330).</td> </tr> <tr> <td>2</td> <td>Host's IP address must be a subnet address, private address, or an address that is within the time-to-live (TTL) hops from the control point.</td> </tr> <tr> <td>3</td> <td>Host's IP address can be any address.</td> </tr> <tr> <td>&gt;3</td> <td>Same as that for the value 0.</td> </tr> </table> </dd> <dt><b>DeviceLifeTime</b></dt> <dd><p>Optional. Specifies a device's lifetime, in seconds, which overrides the value provided in the device's announcement message. If <b>DeviceLifeTime</b> is present, the value specified in the device's announcement is ignored and the registry value is used instead. This applies to all devices.</p> <p>Valid values range from 900 through MAX_DWORD. The default value is 1800. If <b>DeviceLifeTime</b> is set to 0, the default value is used.</p> </dd> <dt>\<b>UPnP Device Host</b>\<b>File Size Limit</b></dt> <dd><p>Specifies the maximum size, in bytes, of each description document. This setting is not configurable in versions of Windows preceding Windows XP Service Pack 2. In the previous versions, this setting is hard-coded as 102400.</p> <p>Valid values range from 10240 through MAX_DWORD. The default value is 102400.</p> </dd> <dt>\<b>Windows</b>\<b>CurrentVersion</b>\<b>UPnP</b>\<b>File Size Limit</b></dt> <dd><p>Specifies the maximum size, in bytes, of the SOAP response that is acceptable. This setting is not configurable in versions of Windows preceding Windows XP Service Pack 2. In the previous versions, this setting is hard-coded as 102400.</p> <p>Valid values range from 10240 through MAX_DWORD. The default value is 102400.</p> </dd> <dt><b>MaxCache</b></dt> <dd><p>Specifies the maximum number of entries allowed in the Simple Service Discovery Protocol (SSDP) cache.</p> <p>Valid values range from 10 through 30000. The default value is 1000.</p> </dd> <dt><b>TTL</b></dt> <dd><p>Specifies the time-to-live for an SSDP packet. That is, <b>TTL</b> specifies the number of hops allowed for a packet.</p> <p>Valid values range from 1 through 255. The default value is 1.</p> </dd> <dt><b>ReceiveScope</b></dt> <dd><p>Specifies which IP addresses are valid sources of a message. If an incoming message originates from an address that is not within the scope specified by <b>ReceiveScope</b>, the message is ignored.  This setting is not configurable in versions of Windows preceding Windows XP Service Pack 2. In the previous versions, a message is accepted without regard to its source.</p> <p>The valid values are shown in the following table. The default value is 1.</p> <table class="clsStd"> <tr> <th>Value of <b>ReceiveScope</b></th> <th>Meaning</th> </tr> <tr> <td>0</td> <td>Sender's IP address must be a subnet address.</td> </tr> <tr> <td>1</td> <td>Sender's IP address must be a subnet address or a private address which is one of 10.<i>x</i>.<i>x</i>.<i>x</i>, 192.168.<i>x</i>.<i>x</i>, 172.16.<i>x</i>.<i>x</i> (as specified by RFC 1918), or 169.254.<i>x</i>.<i>x</i> (as specified by RFC 3330).</td> </tr> <tr> <td>2</td> <td>Not used. If <b>ReceiveScope</b> is set to 2, the default value is used.</td> </tr> <tr> <td>3</td> <td>Sender's IP address can be any address.</td> </tr> </table> </dd> </dl> <h4>See Also</h4> <p><a id="ctl00_rs1_mainContentContainer_ctl03" onclick="javascript:Track('ctl00_rs1_mainContentContainer_ctl00|ctl00_rs1_mainContentContainer_ctl03',this);" href="http://msdn2.microsoft.com/en-us/library/aa382261(VS.85).aspx">Overview of UPnP Architecture</a></p><br /><p><a href="mailto:wsddocfb@microsoft.com?subject=Documentation%20feedback [upnp\upnp]:%20Configuration Settings%20 RELEASE:%20(3/13/2008)&amp;body=%0A%0APRIVACY STATEMENT%0A%0AThe SDK team uses the feedback submitted to improve the SDK documentation. We do not use your e-mail address for any other purpose. We will remove your e-mail address from our system after the issue you are reporting has been resolved. While we are working to resolve this issue, we may send you an e-mail message to request more information about your feedback. After the issues have been addressed, we may send you an e-mail message to let you know that your feedback has been addressed.%0A%0AFor more information about Microsoft's privacy policy, see http://privacy.microsoft.com/en-us/default.aspx." title="Send comments about this topic to Microsoft">Send comments about this topic to Microsoft
+       </a></p> <p style="font-family: Verdana,sans-serif;font-size:8pt">Build date: 3/13/2008</p> </div> </div>
+          </div>
+          </div>
+        
+
+<span id="CommunityContent"></span>
+<div id="ctl00_rs1_WikiContent_cc" class="cc">
+			
+    <div id="ctl00_rs1_WikiContent_ccContainer" class="ccContainer">
+				
+      <div style="margin:10px 0px 25px 0px">
+			  <div id="ctl00_rs1_WikiContent_TopicTagEditor_panel" class="TagEditor_Panel">
+  <span id="ctl00_rs1_WikiContent_TopicTagEditor_title" class="TagEditor_Title">Tags</span>
+  <a href="/platform/Controls/TagEditor/resources/taghelp.htm" id="ctl00_rs1_WikiContent_TopicTagEditor_helpLink" class="TagEditor_HelpLink" onclick="window.open('/platform/Controls/TagEditor/resources/taghelp.htm','_blank','height=600,width=800,location=no,menubar=no,resizable=no,status=no,toolbar=no');return false;">
+    <img src="http://i.msdn.microsoft.com/platform/Controls/TagEditor/resources/help.gif" id="ctl00_rs1_WikiContent_TopicTagEditor_helpImage" class="TagEditor_HelpImage" alt="What's this?" title="What's this?" /></a>:
+  <span id="ctl00_rs1_WikiContent_TopicTagEditor_tags" class="TagEditor_Text"></span>
+  <span id="ctl00_rs1_WikiContent_TopicTagEditor_view" class="TagEditor_View">
+    <a href="../../Platform/Controls/TagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_addTagLink" class="TagEditor_LinkButton" onclick="return TagEditor_AddATag(&quot;http://msdn2.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn2.microsoft.com%2fen-us%2flibrary%2faa381091(VS.85).aspx&quot;,-1);" title="Add a tag to this topic">Add a tag</a>
+  </span>
+  <span id="ctl00_rs1_WikiContent_TopicTagEditor_edit" style="display:none" class="TagEditor_Edit">
+    
+    <input name="ctl00$rs1$WikiContent$TopicTagEditor$textbox" type="text" id="ctl00_rs1_WikiContent_TopicTagEditor_textbox" class="TagEditor_TextBox" autocomplete="off" />
+    <a href="../../Platform/Controls/TagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_addLink" class="TagEditor_LinkButton" onclick="return TagEditor_AddTags(-1);" title="Submit the tags for this topic">Add</a>
+    &nbsp;
+    <a href="../../Platform/Controls/TagEditor/#" id="ctl00_rs1_WikiContent_TopicTagEditor_cancelLink" class="TagEditor_LinkButton" onclick="return TagEditor_CancelAddTag(-1);" title="Cancel this operation">Cancel</a>
+  </span>
+  <span id="ctl00_rs1_WikiContent_TopicTagEditor_message" class="TagEditor_Message"></span>
+</div>
+
+		  </div>
+			<table class="ccHeader" cellpadding="0" cellspacing="0" border="0" width="100%" style="margin:5px 0px 0px 0px">
+				<tr style="height:66px;max-height:66px;margin:0px 0px 0px 0px">
+					<td style="width:30%;padding:0px 0px 0px 0px">
+						<div class="cch_left">
+							<div class="cch_title"><span id="ctl00_rs1_WikiContent_CC_Title">Community Content</span></div>
+						</div>
+					</td>
+					<td style="width:2px;padding:0px 0px 0px 0px">
+					  <img alt="" src="http://i.msdn.microsoft.com/Platform/Controls/WikiSection/resources/green-middle.jpg" style="border-width:0px;" />
+					</td>
+					<td style="width:100%;padding:0px 0px 0px 0px">
+						<div class="cch_right">&nbsp;</div>
+					</td>
+				</tr>
+			</table>
+			<div class="cc_toolbar">
+				<table cellpadding="0" cellspacing="0" border="0" width="100%">
+					<tr>
+						<td class="cch_toolbartext" style="width:50%;background-color:#e3e3e3">
+								<a id="ctl00_rs1_WikiContent_cc_add" class="ccAddLink" href="http://msdn2.microsoft.com/en-us/library/Community-Signup.aspx?ru=http%3a%2f%2fmsdn2.microsoft.com%2fen-us%2flibrary%2faa381091(VS.85).aspx%3fwbi%3dnew">Add</a>
+								Community Content
+						</td>
+						<td align="right" style="width:50%;background-color:#e3e3e3;white-space:nowrap">
+							
+						</td>
+					</tr>
+				</table>
+			</div>
+    
+			</div>
+    <div id="ctl00_rs1_WikiContent_wikiItems" class="wkItemsContainer">
+
+			</div>
+    <div id="ctl00_rs1_WikiContent_wikiItemNew" class="wkItemsContainer">
+				
+      <span id="ctl00_rs1_WikiContent_lbMessage" class="wkMessage" style="display:none;">Your edit has been saved.  It will take a few minutes for the site to update.</span>
+      <div id="ctl00_rs1_WikiContent_newWikiItem" class="wkViewerContainer_Edit" onkeypress="javascript:return WebForm_FireDefaultButton(event, 'ctl00_rs1_WikiContent_lbAdd')" style="display:none;">
+					
+          <div id="ctl00_rs1_WikiContent_ccViewerText" class="wkViewerText">
+						
+			  <input name="ctl00$rs1$WikiContent$title" type="text" id="ctl00_rs1_WikiContent_title" class="InlineEditor_Title_Edit" />
+	          <div id="ctl00_rs1_WikiContent_editor">
+							 
+						</div>
+    		    <div id="ctl00_rs1_WikiContent_panButtons" class="wksButtonsPanel">
+							
+		          <input type="hidden" name="ctl00$rs1$WikiContent$titleData" id="ctl00_rs1_WikiContent_titleData" />
+		          <input type="hidden" name="ctl00$rs1$WikiContent$bodyData" id="ctl00_rs1_WikiContent_bodyData" />
+		          <input type="hidden" name="ctl00$rs1$WikiContent$tagEditorData" id="ctl00_rs1_WikiContent_tagEditorData" />
+		          <table width="100%">
+  				      <tr>
+		              <td style="width:100%;text-align:left">
+				            <span id="ctl00_rs1_WikiContent_tagEditorPanel" style="font-size:10pt;"><span id="ctl00_rs1_WikiContent_tagEditorHeading" style="font-weight:bold;margin:0px 4px 0px 0px;vertical-align:middle;height:20px;">Tags: </span><input name="ctl00$rs1$WikiContent$tagEditorTextBox" type="text" id="ctl00_rs1_WikiContent_tagEditorTextBox" style="vertical-align:middle;height:20px;width:85%" /></span>
+			            </td>
+           	      <td style="width:65px;text-align:left">
+                    <input type="submit" name="ctl00$rs1$WikiContent$lbAdd" value="Submit" id="ctl00_rs1_WikiContent_lbAdd" class="wksButton" />
+                  </td>
+                  <td style="width:65px;text-align:left">
+                    <input type="submit" name="ctl00$rs1$WikiContent$lbCancel" value="Cancel" onclick="wkRemoveNewItem(&quot;ctl00_rs1_WikiContent_cc_add&quot;, &quot;ctl00_rs1_WikiContent_newWikiItem&quot;, &quot;ctl00_rs1_WikiContent_editorComponent&quot;, &quot;ctl00_rs1_WikiContent_lblMessage&quot;);return false;" id="ctl00_rs1_WikiContent_lbCancel" class="wksButton" />
+                  </td>
+                </tr>
+                <tr>
+			            <td style="text-align:left;margin:0">
+           	        <span id="ctl00_rs1_WikiContent_lblMessage" class="wksMessage"></span>
+           	      </td>
+                </tr>
+              </table>
+           
+						</div>    
+
+           
+        
+					</div>
+        
+				</div>
+    
+			</div>
+ 
+    
+    <div id="ctl00_rs1_WikiContent_ccFooter" class="ccFooter">
+				
+          <div class="cch_footertext">
+              <a id="ctl00_rs1_WikiContent_FAQ" onclick="javascript:Track('ctl00_rs1_WikiContent_ccFooter|ctl00_rs1_WikiContent_FAQ',this);" href="/en-us/library/community-MSDNWikiFAQ(VS.85).aspx">FAQ</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a id="ctl00_rs1_WikiContent_cc_CodeOfConduct" onclick="javascript:Track('ctl00_rs1_WikiContent_ccFooter|ctl00_rs1_WikiContent_cc_CodeOfConduct',this);" href="/en-us/library/community-CodeOfConduct(VS.85).aspx">Code of Conduct</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a id="ctl00_rs1_WikiContent_cc_Permissive" onclick="javascript:Track('ctl00_rs1_WikiContent_ccFooter|ctl00_rs1_WikiContent_cc_Permissive',this);" href="/en-us/library/community-MSPermissiveLic(VS.85).aspx">Microsoft Permissive License</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+              <a id="ctl00_rs1_WikiContent_cc_Commons" onclick="javascript:Track('ctl00_rs1_WikiContent_ccFooter|ctl00_rs1_WikiContent_cc_Commons',this);" href="/en-us/library/community-CreativeCommonsLic(VS.85).aspx">Creative Commons Attribution - Non Commercial 2.5 License</a>
+          </div>
+    
+			</div>
+    
+   
+
+		</div>
+        
+
+<div style="overflow:hidden;display:block;position:relative;">
+<table cellpadding="0" cellspacing="0" border="0" width="100%">
+  <tr>
+    <td id="ctl00_rs1_mtpsFooter_FooterFadeCell" class="MTPS_FooterFade">
+      <div id="ctl00_rs1_mtpsFooter_SiteLinks" class="MTPS_FooterLinks">
+			<a id="ctl00_rs1_mtpsFooter_LocalFooterLink0" title="Manage Your Profile" href="http://go.microsoft.com/?linkid=317027">Manage Your Profile</a>&nbsp;|&nbsp;<a id="ctl00_rs1_mtpsFooter_LocalFooterLink1" title="Legal" href="http://www.microsoft.com/legal/">Legal</a>&nbsp;|&nbsp;<a id="ctl00_rs1_mtpsFooter_LocalFooterLink2" title="Contact Us" href="http://go.microsoft.com/?linkid=2028439">Contact Us</a>&nbsp;|&nbsp;<a id="ctl00_rs1_mtpsFooter_LocalFooterLink3" title="MSDN Flash Newsletter" href="http://msdn.microsoft.com/flash/">MSDN Flash Newsletter</a>
+		</div>
+      <span id="ctl00_rs1_mtpsFooter_MSFT_copyright" title="© 2008  Microsoft Corporation. All rights reserved." class="MTPS_FooterCopyright">&copy; 2008  Microsoft Corporation. All rights reserved.</span>
+      <a id="ctl00_rs1_mtpsFooter_MSFT_Terms" title="Terms of Use" class="MTPS_FooterLinks" href="/cc300389.aspx">Terms of Use</a>
+      &nbsp;|&nbsp;
+      <a id="ctl00_rs1_mtpsFooter_MSFT_Trademarks" title="Trademarks" class="MTPS_FooterLinks" href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx">Trademarks</a>
+      &nbsp;|&nbsp;
+      <a id="ctl00_rs1_mtpsFooter_MSFT_PrivacyStatement" title="Privacy Statement" class="MTPS_FooterLinks" href="http://www.microsoft.com/info/privacy.mspx">Privacy Statement</a>
+    </td>
+		
+    <td id="ctl00_rs1_mtpsFooter_FooterLogoCell">
+      <img id="ctl00_rs1_mtpsFooter_MSFT_LOGO" title="Microsoft Corporation" class="MTPS_FooterLogo" src="http://i.msdn.microsoft.com/platform/Controls/Footer/resources/mslogo.gif" alt="Microsoft Corporation" style="border-width:0px;" />
+    </td>
+		
+  </tr>
+</table>
+
+</div>
+ 
+        
+	</div>
+</div>
+    </div>
+    <div style="display:none"><img src="http://c.microsoft.com/trans_pixel.asp?source=msdn2&amp;TYPE=PV&amp;uri=%2fen-us%2flibrary(d%3ddefault)%2faa381091(l%3den-us%2cv%3dVS.85).aspx&amp;p=_en-us_library(d=default)_aa381091(l=en-us,v=VS.85).aspx" width="0" height="0" hspace="0" vspace="0" border="0" alt="Page view tracker" /></div>
+    
+<script src="http://i2.msdn.microsoft.com/platform/Controls/WebTrends/resources/msdn.wtnvr-bn1795.1.js" type="text/javascript"></script>
+<script src="http://i2.msdn.microsoft.com/platform/Controls/WebTrends/resources/webtrendsscript-bn1795.1.js" type="text/javascript"></script>
+<noscript>
+<div><img alt="DCSIMG" id="Img1" width="1" height="1" src="http://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></div>
+</noscript><span id="ctl00_ctl06_hiddenTargetControlForModalPopup" style="display:none"></span>
+
+<div id="ctl00_ctl06_PageGatePopUp" class="PageGateModal" style="display: none">
+	
+<div class="PageGateModalContent2">
+<span id="ctl00_ctl06_pageGateCancel" class="PageGateModalClose"></span>
+  <img id="ctl00_ctl06_Download_sl_logo_tagline_bottom" src="http://i.msdn.microsoft.com/platform/Controls/PageGate/resources/download_sl_logo_tagline_bottom.png" alt="Install Microsoft Silverlight for a better experience on this site." style="border-width:0px;" />
+
+  <p class="PageGateSubtitle">
+    <span id="ctl00_ctl06_SubTitle">Experience Silverlight enabled quickstart tutorials, video training, showcases & more. </span>
+  </p>
+<span onclick="onPageGateOk(); return true">
+  <a id="ctl00_ctl06_InstallLink" onclick="javascript:Track('ctl00_ctl06_PageGatePopUp|ctl00_ctl06_InstallLink',this);" class="PageGateButton" href="http://go.microsoft.com/fwlink/?LinkID=92799"><img border="0" src="http://i.msdn.microsoft.com/platform/Controls/PageGate/resources/download_sl_button.png" alt="" /></a>
+</span>
+
+  <p class="PageGateLegal">
+    <span id="ctl00_ctl06_LegalText_Start">By clicking "Click to Install" you accept the </span>
+    <a id="ctl00_ctl06_License_Link" href="http://go.microsoft.com/fwlink/?LinkID=92803" target="SLExternal">Silverlight License Agreement</a>
+    <span id="ctl00_ctl06_LegalText_Middle">.<br />Silverlight updates automatically, </span>
+    <a id="ctl00_ctl06_LearnMore_Link" href="http://go.microsoft.com/fwlink/?LinkID=92805" target="SLExternal">learn more</a>
+    <span id="ctl00_ctl06_LegalText_End">.</span>
+  </p>
+</div>
+
+</div>
+
+
+
+<script type="text/javascript" src="http://i2.msdn.microsoft.com/en-us/library/mtps-bn1795.1.js?l=en-us&amp;i=library&amp;ct=AlternateSelector;Banner;ContentFallback;DropDownFilter;ExpandCollapseAll;Eyebrow;Footer;InteractiveToolbar;LocaleManagementFlyout;MemberlistFrameworksFilter;MemberlistMembersFilter;MtpsLoginStatus;PageGate;QuickLinksFlyout;RelatedPages;ResizableArea;SurveyLauncher;Tabs;TagEditor;TemplatedFlyout;Tickler;Toc;UserRecognition;WebMetrix;WebTrends;WikiEditor;WikiItem;WikiSection"></script>
+  
+<script type="text/javascript">
+//<![CDATA[
+var TagEditorControls =  new Array({id:-1,prefix:'ctl00_rs1_WikiContent_TopicTagEditor_'});
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+window.setTimeout(function(){EC_Init("ctl00_rs1_ExpandCollapse","Expand All","Collapse All","http://i.msdn.microsoft.com/platform/Controls/ExpandCollapseAll/resources/plus.gif","http://i.msdn.microsoft.com/platform/Controls/ExpandCollapseAll/resources/minus.gif");},0);
+WebForm_InitCallback();var ctl00_bnr_tabs_ScopeMenu_Data = new Object();
+ctl00_bnr_tabs_ScopeMenu_Data.disappearAfter = 500;
+ctl00_bnr_tabs_ScopeMenu_Data.horizontalOffset = -102;
+ctl00_bnr_tabs_ScopeMenu_Data.verticalOffset = 17;
+ctl00_bnr_tabs_ScopeMenu_Data.hoverClass = 'ctl00_bnr_tabs_ScopeMenu_9 scopeHover';
+ctl00_bnr_tabs_ScopeMenu_Data.hoverHyperLinkClass = 'ctl00_bnr_tabs_ScopeMenu_8 scopeHover';
+ RegisterAutoSubmit('ctl00_ib1_Flyout_Rating1','ctl00_ib1_Flyout_btnSubmit','contentRatingaa381091VS.85en-us');
+//]]>
+</script>
+<script type="text/javascript" language="javascript">
+<!--
+ function GetContentWnd(){ return parent; } function OnInitPage(){var oWnd = GetContentWnd();} function GetServerData(arg, context){} function OnSave(){ var oWnd = GetContentWnd(); window.external.addFavorite('http://msdn2.microsoft.com/en-us/library/aa381091(VS.85).aspx', oWnd.document.title ); }
+
+-->
+</script>
+<script type="text/javascript">
+//<![CDATA[
+document.getElementById('ctl00_ib1_Flyout_rtgContainer').title="Click a star and provide feedback";
+
+ document.onkeypress = function(e){ ra_keyPress(e, "ctl00_rs1_raSplitter","ctl00_rs1_raLeft");};
+TagEditor_Init("aa381091","en-us","VS.85","false","http%3a%2f%2fmsdn2.microsoft.com%2fen-us%2flibrary%2faa381091(VS.85).aspx");TagEditor_InitStrings("No tags entered","An error has occurred","Browse other topics containing this tag","Remove the tag from this topic");Sys.UI.DomEvent.addHandler($get("ctl00_rs1_WikiContent_TopicTagEditor_edit"),"keydown",TagEditor_KeyDown);Sys.Application.initialize();
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.Animation.AnimationBehavior, {"OnHoverOut":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"Color\",\"AnimationTarget\":\"ctl00_bnr_ctl00_InstallLink\",\"Duration\":\".75\",\"StartValue\":\"#009900\",\"EndValue\":\"#ff0000\",\"Property\":\"style\",\"PropertyKey\":\"color\",\"AnimationChildren\":[]},{\"AnimationName\":\"Color\",\"AnimationTarget\":\"ctl00_bnr_ctl00_InstallLink\",\"Duration\":\".75\",\"StartValue\":\"#ff0000\",\"EndValue\":\"#0000ff\",\"Property\":\"style\",\"PropertyKey\":\"color\",\"AnimationChildren\":[]}]}","OnHoverOver":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"Color\",\"AnimationTarget\":\"ctl00_bnr_ctl00_InstallLink\",\"Duration\":\".15\",\"StartValue\":\"#0000ff\",\"EndValue\":\"#009900\",\"Property\":\"style\",\"PropertyKey\":\"color\",\"AnimationChildren\":[]}]}","OnLoad":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"Color\",\"AnimationTarget\":\"ctl00_bnr_ctl00_InstallLink\",\"Duration\":\"1\",\"StartValue\":\"#ffffff\",\"EndValue\":\"#0000ff\",\"Property\":\"style\",\"PropertyKey\":\"color\",\"AnimationChildren\":[]}]}","id":"ctl00_bnr_ctl00_ticklerAnimation"}, null, null, $get("ctl00_bnr_ctl00_InstallLink"));
+});
+TFly_Init('ctl00$bnr$LocaleManagement$ctl00',0,0,1, 4,60,'LocaleManagementFlyoutStaticHover','',100,400,'','','');
+TFly_Init('ctl00$bnr$QuickLinks$ctrlFlyout',0,0,1, 4,60,'QuickLinksFlyoutStaticHover_msdn','',100,400,'','','');
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.AutoCompleteBehavior, {"completionInterval":500,"delimiterCharacters":"","enableCaching":false,"id":"ctl00_bnr_tabs_SearchAutoComplete","minimumPrefixLength":4,"serviceMethod":"GetTerms","servicePath":"../../Platform/Controls/Tabs/TermService.asmx"}, null, null, $get("ctl00_bnr_tabs_SearchTextBox"));
+});
+TFly_Init('ctl00$ib1$Flyout',5,2,1, 4,60,'','',100,400,'','','');
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.MtpsRatingBehavior, {"AutoPostBack":false,"CallbackID":"ctl00$ib1$Flyout$Rating1","ClientStateFieldID":"ctl00_ib1_Flyout_Rating1_RatingExtender_ClientState","EmptyStarCssClass":"emptyRatingStar","FilledStarCssClass":"filledRatingStar","StarCssClass":"ratingStar","Tag":"contentRatingaa381091VS.85en-us","WaitingStarCssClass":"savedRatingStar","id":"ctl00_ib1_Flyout_Rating1_RatingExtender"}, null, null, $get("ctl00_ib1_Flyout_Rating1"));
+});
+//]]>
+</script>
+<script type="text/javascript">var tocVectorObject = {"nodes": [{"id": "ms310241" ,"url": "/ms310241(n)"},{"id": "aa139672" ,"url": "/aa139672(n)"},{"id": "aa163249" ,"url": "/aa163249(n)"},{"id": "aa163253" ,"url": "/aa163253(n)"},{"id": "ms766138" ,"url": "/ms766138(VS.85,n)"},{"id": "aa381091" ,"url": "/aa381091(VS.85,n)"}]};var hostbase ="http://msdn2.microsoft.com/en-us/library";var tocLoaded = "false";var tocVector = eval(tocVectorObject);var closedImg = "http://i.msdn.microsoft.com/platform/Controls/Toc/resources/c.gif";var openImg = "http://i.msdn.microsoft.com/platform/Controls/Toc/resources/o.gif";var emptyImg = "http://i.msdn.microsoft.com/platform/Controls/Toc/resources/e.gif";var loadingImg = "http://i.msdn.microsoft.com/platform/Controls/Toc/resources/s.gif";Sys.Application.add_load(LoadToc);var tocIndex = 0;var holder;</script>
+<script type="text/javascript">
+//<![CDATA[
+TFly_Init('ctl00$rs1$eb1$ctl00',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+TFly_Init('ctl00$rs1$eb1$ctl01',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+TFly_Init('ctl00$rs1$eb1$ctl02',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+TFly_Init('ctl00$rs1$eb1$ctl03',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+TFly_Init('ctl00$rs1$eb1$ctl04',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+TFly_Init('ctl00$rs1$eb1$ctl05',0,-1,-1, 10,5,'statHover','',250,250,'EyeBrowMenuBarSetHeight','','');
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.TagAutoCompleteBehavior, {"completionInterval":500,"completionListCssClass":"TagEditor_TagAutoComplete","contextKey":"en-us","delimiterCharacters":" ","enableCaching":false,"id":"ctl00_rs1_WikiContent_TopicTagEditor_autoComplete1","minimumPrefixLength":2,"serviceMethod":"GetTagCompletionList","servicePath":"../../Platform/Controls/TagEditor/TagCompletionWebService.asmx","useContextKey":true}, null, null, $get("ctl00_rs1_WikiContent_TopicTagEditor_textbox"));
+});
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.TagAutoCompleteBehavior, {"completionInterval":500,"completionListCssClass":"TagEditor_TagAutoComplete","contextKey":"en-us","delimiterCharacters":" ","enableCaching":false,"id":"ctl00_rs1_WikiContent_autoComplete1","minimumPrefixLength":2,"serviceMethod":"GetTagCompletionList","servicePath":"../../Platform/Controls/TagEditor/TagCompletionWebService.asmx","useContextKey":true}, null, null, $get("ctl00_rs1_WikiContent_tagEditorTextBox"));
+});
+Sys.Application.add_init(function() {
+    $create(Microsoft.Mtps.Web.UI.InlineEditorBehavior, {"FocusOnStart":true,"ToolbarImageUrl":"http://i.msdn.microsoft.com/platform/controls/wikieditor/resources/toolbar.gif","ToolbarSettings":"b:Cut:::0:25:Cut Text:false:true;b:Copy:::25:25:Copy Text:false:true;b:Paste:::50:25:Paste Text:false:true;s:75:7:false:true;b:FormatBlock:P::189:53:Normal:true:true;b:FormatBlock:PRE::147:42:Code:true:true;b:FormatBlock:H3::83:64:Header 3:true:true;s:75:7:true:true;b:Bold::Bold:242:25:Bold:true:true;b:Italic::Italic:267:25:Italic:true:true;b:Underline::Underline:292:25:Underline:true:true;s:75:7:true:true;b:InsertOrderedList::InsertOrderedList:317:25:Numbered List:true:true;b:InsertUnOrderedList::InsertUnOrderedList:342:25:Unordered List:true:true;b:Outdent::Outdent:367:25:Decrease Indent:true:true;b:Indent::Indent:392:25:Increase Indent:true:true;s:75:7:true:false;b:Undo::Indent:417:25:Undo:true:false;b:Redo::Indent:442:25:Redo:true:false;","id":"ctl00_rs1_WikiContent_editorComponent"}, null, null, $get("ctl00_rs1_WikiContent_editor"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.ModalPopupBehavior, {"BackgroundCssClass":"PageGateModalMask","CancelControlID":"ctl00_ctl06_pageGateCancel","PopupControlID":"ctl00_ctl06_PageGatePopUp","dynamicServicePath":"/en-us/library/aa381091(VS.85).aspx","id":"pageGateBehavior"}, null, null, $get("ctl00_ctl06_hiddenTargetControlForModalPopup"));
+});
+Sys.Application.add_init(function() {
+    $create(AjaxControlToolkit.Animation.AnimationBehavior, {"OnLoad":"{\"AnimationName\":\"Sequence\",\"AnimationChildren\":[{\"AnimationName\":\"FadeIn\",\"Duration\":\".25\",\"Fps\":\"20\",\"AnimationChildren\":[]}]}","id":"ctl00_ctl06_pageGateAnimation"}, null, null, $get("ctl00_ctl06_PageGatePopUp"));
+});
+//]]>
+</script>
+</form>
+</body>
+</html>
